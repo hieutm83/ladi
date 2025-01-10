@@ -1,0 +1,29 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+/* Căn giữa nội dung theo chiều ngang */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: flex-start; /* Giữ nội dung ở trên cùng (không căn giữa theo chiều dọc) */
+}
+
+/* Container chính của trang */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  min-height: 100vh; /* Đảm bảo chiều cao của container chiếm hết chiều cao của màn hình */
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}

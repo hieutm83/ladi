@@ -1,0 +1,66 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Loại bỏ thanh cuộn trang */
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86px; /* Chiều cao chính xác của header */
+  z-index: 1000;
+  overflow: hidden; /* Đảm bảo không có thanh cuộn trong header */
+}
+
+.iframe-header {
+  width: 100%;
+  height: 100%; /* Chiều cao khớp với header */
+  border: none;
+  display: block; /* Đảm bảo iframe không bị ảnh hưởng bởi các thuộc tính inline */
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Chiều cao của footer */
+  z-index: 1000;
+  overflow: hidden; /* Đảm bảo không có thanh cuộn trong footer */
+}
+
+.iframe-footer {
+  width: 100%;
+  height: 100%; /* Chiều cao khớp với footer */
+  border: none;
+  display: block;
+}
+
+/* Main */
+.main {
+  position: absolute;
+  top: 86px; /* Đẩy xuống dưới header */
+  bottom: 70px; /* Đẩy lên trên footer */
+  width: 100%;
+  overflow: hidden; /* Không có thanh cuộn trong main */
+}
+
+.iframe-main {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  overflow: hidden; /* Đảm bảo nội dung bên trong iframe không cuộn */
+}

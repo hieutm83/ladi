@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Body</title>
+  <!-- Liên kết globals.css và style.css -->
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Áp dụng font Roboto cho các phần tử */
+    .text-wrapper-7 {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="container-wrapper">
+        <div class="div">
+          <div class="overlap">
+            <div class="gradient"></div>
+            <div class="div-2">
+              <img class="image" src="img/image-3.svg" /> <img class="img" src="img/image-2.svg" />
+            </div>
+            <div class="overlap-group-wrapper">
+              <div class="div-3">
+                <div class="div-5">
+                  <div class="heading-wrapper-2">
+                    <div class="heading-2"><div class="text-wrapper-3">Flash Sale</div></div>
+                  </div>
+                  <img class="img-2" src="img/container-7.svg" />
+                </div>
+              </div>
+            </div>
+            <div class="heading-wrapper-3">
+              <div class="heading-3">
+                <div class="text-wrapper-4" style="letter-spacing: -0.5px;">Kết thúc sau <span id="countdown" style="margin-left: 4px;">08:27:09</span></div>
+              </div>
+            </div>
+            
+            <script>
+              // Khởi tạo thời gian bắt đầu
+              let hours = 8;
+              let minutes = 27;
+              let seconds = 9;
+            
+              // Hàm cập nhật đếm ngược
+              function updateCountdown() {
+                if (hours === 0 && minutes === 0 && seconds === 0) {
+                  document.getElementById('countdown').textContent = "00:00:00";
+                  return;
+                }
+            
+                // Giảm thời gian
+                if (seconds > 0) {
+                  seconds--;
+                } else {
+                  seconds = 59;
+                  if (minutes > 0) {
+                    minutes--;
+                  } else {
+                    minutes = 59;
+                    if (hours > 0) {
+                      hours--;
+                    }
+                  }
+                }
+            
+                // Hiển thị thời gian
+                const timeString = 
+                  `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                document.getElementById('countdown').textContent = timeString;
+              }
+            
+              // Cập nhật mỗi giây
+              updateCountdown(); // Gọi ngay khi tải trang
+              setInterval(updateCountdown, 1000);
+            </script>
+            
+            <div class="overlap-wrapper-2">
+              <div class="overlap-2">
+                <div class="extra-vc"><img class="extra-vc2" src="img/extra.svg" /></div>
+                <div class="heading-wrapper-7"> 
+                  <div class="div-4"><div class="extra">XTRA</div></div>
+                </div>
+                <div class="heading-wrapper-8">
+                  <div class="heading-3">
+                    <div class="shipping-voucher">Freeship<br />Voucher*</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-wrapper-2">
+            <div class="heading-wrapper-9">
+              <div class="heading-4">
+                <div class="gi-m">49.000₫</div>
+                <span class="price-old">80.000đ</span>
+              </div>              
+            </div>
+          </div>
+          <img class="img-4" src="img/container-26.svg" />
+        </div>
+      </div>
+      <div class="container-wrapper-3">
+        <div class="div-6">
+          <div class="overlap-3">
+            <div class="heading-wrapper-10">
+              <div class="gi-m-ph-v-n-wrapper">
+                <p class="gi-m-ph-v-n" style="font-family: 'Roboto', sans-serif; font-weight: 400; white-space: normal; word-wrap: break-word;">
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Giảm 5000đ phí vận chuyển đối với
+                  các đơn hàng trị giá 25000đ trở lên, giảm 25000đ phí vận chuyển đối với các đơn hàng trị giá
+                  80.000đ trở lên
+                </p>
+              </div>
+            </div>
+            <div class="container-wrapper-4">
+              <div class="heading-wrapper-11">
+                <div class="heading-5"><p class="text-wrapper-5" style="letter-spacing: -0.5px;">Voucher giảm phí vận chuyển</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-4">
+            <div class="heading-wrapper-12">
+              <div class="gel-t-m-khuynh-di-p-wrapper">
+                <h3 class="ladi-headline">
+                  <span style="font-weight: 700; font-size: 18px; line-height: 25px; font-family: 'Roboto', sans-serif;">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                       Gel tắm khuynh diệp hoa hồng Rosie làm sạch, thơm mịn làn da 500ml&nbsp;
+                  </span>
+                  <br />
+                </h3>
+              </div>
+            </div>
+            <img class="img-5" src="img/container-18.svg" />
+            <div class="background-2"></div>
+            <div class="container-wrapper-5">
+              <div class="div-4"><div class="text-wrapper-6" style="font-family: 'Roboto', sans-serif; font-weight: 400; font-style: italic;">Sale sốc!!!</div></div>
+            </div>
+          </div>
+          <div class="overlap-5">
+            <div class="vertical-divider-wrapper"><div class="vertical-divider"></div></div>
+            <div class="div-7">
+              <img class="img-6" src="img/container-3.svg" />
+              <div class="overlap-6">
+                <div class="heading-wrapper-13">
+                  <div class="div-4"><div class="text-wrapper-7" style="letter-spacing: 0px;">4.8/5</div></div>
+                </div>
+                <div class="heading-wrapper-14">
+                  <div class="div-4"><div class="text-wrapper-8">(1.2k)</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overlap-group-wrapper-2">
+            <div class="div-4">
+              <div class="heading-wrapper-15">
+                <div class="div-4"><div class="text-wrapper-9" style="letter-spacing: -0.5px;">Đã bán</div></div>
+              </div>
+              <div class="heading-wrapper-16">
+                <div class="div-4"><div class="text-wrapper-10">12k</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="div-8">
+            <img class="img-7" src="img/container-16.svg" />
+            <div class="heading-wrapper-17">
+              <div class="div-4"><div class="text-wrapper-11" style="letter-spacing: -0.5px;">Miễn phí vận chuyển</div></div>
+            </div>
+          </div>
+          <div class="overlap-7">
+            <div class="div-9">
+              <div class="heading-wrapper-18">
+                <div class="heading-6"><p class="text-wrapper-12">Đội ngũ hỗ trợ 24/7</p></div>
+              </div>
+              <img class="img-8" src="img/container-13.svg" />
+            </div>
+            <div class="div-10">
+              <div class="heading-wrapper-19">
+                <div class="heading-6"><div class="text-wrapper-13">Hủy đơn dễ dàng</div></div>
+              </div>
+              <img class="img-9" src="img/image.svg" />
+            </div>
+            <div class="div-11">
+              <div class="heading-wrapper-20">
+                <div class="heading-6"><div class="text-wrapper-14">Thanh toán bảo mật</div></div>
+              </div>
+              <img class="img-10" src="img/container-15.svg" />
+            </div>
+          </div>
+          <div class="overlap-8">
+            <div class="heading-wrapper-21">
+              <div class="div-12"><div class="text-wrapper-15" style="letter-spacing: -0.5px;">Dung tích</div></div>
+            </div>
+            <div class="container-wrapper-6">
+              <div class="heading-wrapper-22">
+                <div class="heading-6"><div class="text-wrapper-16">500ml</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="heading-wrapper-23">
+            <div class="div-12"><div class="text-wrapper-17" style="letter-spacing: -0.5px;">Hình thức thanh toán</div></div>
+          </div>
+          <div class="div-13">
+            <div class="overlap-9">
+              <div class="heading-wrapper-24">
+                <div class="heading-7"><div class="text-wrapper-18" style="letter-spacing: -0.5px;">COD</div></div>
+              </div>
+            </div>
+            <div class="heading-wrapper-25">
+              <div class="heading-5"><p class="text-wrapper-19" style="letter-spacing: -0.5px;">Thanh toán bằng tiền mặt (COD)</p></div>
+            </div>
+          </div>
+          <div class="background-3"></div>
+          <div class="heading-wrapper-26">
+            <div class="div-12"><div class="text-wrapper-20" style="letter-spacing: -0.5px;">Chính sách đổi trả</div></div>
+          </div>
+          <div class="heading-wrapper-27">
+            <div class="heading-5">
+              <p class="text-wrapper-21" style="letter-spacing: -0.5px;">Trả hàng trong vòng 7 ngày - Hủy đơn dễ dàng - Hoàn hàng miễn phí</p>
+            </div>
+          </div>
+          <div class="container-wrapper-7">
+            <div class="container-wrapper-8">
+              <div class="div-wrapper-2"><div class="text-wrapper-22">Mua ngay</div></div>
+            </div>
+          </div>
+          <div class="overlap-10">
+            <div class="overlap-11">
+              <div class="container-wrapper-9">
+                <div class="div-4"><div class="text-wrapper-23" style="letter-spacing: -0.5px;">Sản phẩm hàng đầu</div></div>
+              </div>
+              <div class="container-wrapper-10">
+                <div class="div-4"><p class="s-a-t-m-x-ph-ng-t-m">. Sữa tắm &amp; xà phòng tắm...</p></div>
+              </div>
+              <img class="img-11" src="img/container-21.svg" />
+            </div>
+            <img class="img-12" src="img/container-24.svg" />
+          </div>
+          <div class="container-wrapper-11">
+            <div class="heading-wrapper-22">
+              <div class="heading-6"><div class="text-wrapper-24">1000ml</div></div>
+            </div>
+          </div>
+          <div class="container-wrapper-12">
+            <div class="horizontal-divider-wrapper"><div class="horizontal-divider"></div></div>
+          </div>
+          <div class="heading-wrapper-28">
+            <div class="div-12"><div class="text-wrapper-25" style="letter-spacing: -0.5px;">Vận chuyển</div></div>
+          </div>
+          <div class="overlap-12">
+            <div class="heading-wrapper-29">
+              <div class="div-14"><div class="text-wrapper-26" style="letter-spacing: -0.5px;">22.200đ</div></div>
+            </div>
+            <div class="heading-wrapper-30">
+              <div class="div-14"><div class="text-wrapper-27" style="letter-spacing: -0.5px;">Free</div></div>
+            </div>
+            <img class="img-13" src="img/container-8.svg" />
+          </div>
+          <div class="heading-wrapper-31">
+            <div class="div-4"><p class="text-wrapper-28">Từ Long Biên đến Nam Từ Liêm</p></div>
+          </div>
+          <div class="heading-wrapper-32">
+            <div class="div-4"><p class="text-wrapper-29">Ngày giao hàng dự kiến: Sep 23 -Sep25</p></div>
+          </div>
+          <div class="container-wrapper-13">
+            <div class="horizontal-divider-wrapper"><div class="horizontal-divider"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-wrapper-14">
+        <div class="div-15">
+          <div class="background-4"></div>
+          <div class="heading-wrapper-33">
+            <div class="div-4"><p class="text-wrapper-30" style="font-size: 16px; letter-spacing: -0.5px;">Đánh giá của khách hàng (1245 bình luận)</p></div>
+          </div>
+          <div class="heading-wrapper-34">
+            <div class="div-14"><p class="text-wrapper-31">Còn hơn 52+ đánh giá khác…</p></div>
+          </div>
+          <div class="overlap-group-wrapper-3">
+            <div class="div-14">
+              <div class="heading-wrapper-35">
+                <div class="heading-6"><div class="text-wrapper-32" style="letter-spacing: -0.5px;">Xem thêm</div></div>
+              </div>
+              <img class="img-14" src="img/container-27.svg" />
+            </div>
+          </div>
+          <div class="overlap-13">
+            <div class="heading-wrapper-13">
+              <div class="div-4">
+                <p class="element"><span class="span">4.8</span> <span class="text-wrapper-33">/5</span></p>
+              </div>
+            </div>
+            <img class="img-15" src="img/container-4.svg" />
+          </div>
+          <div class="image-wrapper"><img class="image-2" src="img/image-14.png" /></div>
+          <div class="heading-wrapper-36">
+            <div class="div-14"><div class="thanh-huy-n" style="letter-spacing: -0.5px;">Thanh Huyền</div></div>
+          </div>
+          <img class="img-16" src="img/container-5.svg" />
+          <div class="heading-wrapper-37">
+            <div class="heading-8">
+              <p class="s-n-ph-m-d-ng-t-t-t">
+                Sản phẩm dùng tốt, tắm xong thấy thơm mềm mịn da. Mình đã dùng đến chai thứ 2 rồi. Mua ở đây rất
+                yên tâm, chăm sóc khách hàng cũng rất chu đáo.
+              </p>
+            </div>
+          </div>
+          <div class="img-wrapper"><img class="image-3" src="img/image-5.png" /></div>
+          <div class="image-wrapper-2"><img class="image-4" src="img/image-8.png" /></div>
+          <div class="heading-wrapper-38">
+            <div class="heading-6"><div class="text-wrapper-34" style="letter-spacing: -0.5px;">Mặt hàng : 500ml</div></div>
+          </div>
+          <div class="div-16">
+            <div class="image-wrapper-3"><img class="image-5" src="img/image-10.png" /></div>
+            <div class="heading-wrapper-39">
+              <div class="div-14"><div class="text-wrapper-35" style="letter-spacing: -0.5px;">Ánh Nhi</div></div>
+            </div>
+            <img class="img-17" src="img/container-2.svg" />
+            <div class="image-wrapper-4"><img class="image-6" src="img/image-16.png" /></div>
+            <div class="image-wrapper-5"><img class="image-7" src="img/image-11.png" /></div>
+            <div class="image-wrapper-6"><img class="image-8" src="img/image-2.png" /></div>
+            <div class="heading-wrapper-40">
+              <div class="heading-6"><div class="text-wrapper-34" style="letter-spacing: -0.5px;">Mặt hàng : 500ml</div></div>
+            </div>
+            <div class="heading-wrapper-41">
+              <div class="heading-9">
+                <p class="may-m-n-mua-ng-t-gi">
+                  May mắn mua đúng đợt giảm giá, sữa tắm sài ok lắm, thơm mát, có mùi bạc hà nên tắm cũng thấy thư
+                  giãn hơn.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="div-17">
+            <div class="image-wrapper-7"><img class="image-9" src="img/image-15.png" /></div>
+            <div class="heading-wrapper-42">
+              <div class="div-14"><div class="v-n-d-ng" style="letter-spacing: -0.5px;">Văn Dũng</div></div>
+            </div>
+            <img class="img-18" src="img/container-6.svg" />
+            <div class="heading-wrapper-43">
+              <div class="heading-8">
+                <p class="ng-g-i-c-n-th-n-kh">
+                  Đóng gói cẩn thận không bị đổ ra ngoài, shop tư vấn nhiệt tình. Dùng thấy đỡ mụn lưng hẳn, da
+                  cũng ẩm với mịn hơn, không bị khô như đợt trước.
+                </p>
+              </div>
+            </div>
+            <div class="blur"><img class="image-10" src="img/image-19.png" /></div>
+            <div class="image-wrapper-8"><img class="image-11" src="img/image-20.png" /></div>
+            <div class="heading-wrapper-44">
+              <div class="heading-6"><div class="text-wrapper-36" style="letter-spacing: -0.5px;">Mặt hàng : 1000ml</div></div>
+            </div>
+          </div>
+          <div class="div-18">
+            <div class="image-wrapper-7"><img class="image-12" src="img/image-4.png" /></div>
+            <div class="heading-wrapper-45">
+              <div class="div-14"><div class="ho-ng-anh" style="letter-spacing: -0.5px;">Hoàng Anh</div></div>
+            </div>
+            <img class="img-18" src="img/container-20.svg" />
+            <div class="heading-wrapper-46">
+              <div class="div-12">
+                <p class="text-wrapper-37">Dùng thích, thơm mát mịn da, giao hàng nhanh, uy tín</p>
+              </div>
+            </div>
+            <div class="image-wrapper-9"><img class="image-13" src="img/image-18.png" /></div>
+            <div class="image-wrapper-10"><img class="image-14" src="img/image-6.png" /></div>
+            <div class="heading-wrapper-44">
+              <div class="heading-6"><div class="text-wrapper-36" style="letter-spacing: -0.5px;">Mặt hàng : 1000ml</div></div>
+            </div>
+          </div>
+          <div class="div-19">
+            <div class="image-wrapper-3"><img class="image-15" src="img/image.png" /></div>
+            <div class="heading-wrapper-39">
+              <div class="div-14"><div class="mai-duy-n" style="letter-spacing: -0.5px;">Mai Duyên</div></div>
+            </div>
+            <img class="img-17" src="img/container-22.svg" />
+            <div class="heading-wrapper-40">
+              <div class="heading-6"><div class="text-wrapper-34" style="letter-spacing: -0.5px;">Mặt hàng : 500ml</div></div>
+            </div>
+            <div class="heading-wrapper-41">
+              <div class="heading-9">
+                <p class="c-nh-m-nh-ang-d-ng">
+                  Cả nhà mình đang dùng loại này. Lần này mua tặng bạn bạn cũng phản hồi dùng rất ok, rất thích,
+                  tks shop<br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-wrapper-15">
+        <div class="div-20">
+          <div class="overlap-14">
+            <div class="background-border"></div>
+            <img class="img-19" src="img/container.svg" />
+            <div class="heading-wrapper-47">
+              <div class="heading-5"><div class="text-wrapper-38">4.9</div></div>
+            </div>
+          </div>
+          <div class="container-wrapper-16"><img class="img-20" src="img/container-25.svg" /></div>
+          <div class="heading-wrapper-48">
+            <div class="div-4"><div class="t-n-shop-ABC" style="letter-spacing: -0.5px;">TÊN SHOP ABC</div></div>
+          </div>
+          <div class="overlap-15">
+            <div class="overlap-group-2">
+              <div class="heading-wrapper-49">
+                <div class="heading-6"><div class="text-wrapper-39" style="letter-spacing: -0.5px;">Mặt hàng</div></div>
+              </div>
+              <div class="heading-wrapper-50">
+                <div class="heading-6"><div class="text-wrapper-40" style="letter-spacing: -0.5px;">Đã bán</div></div>
+              </div>
+              <div class="heading-wrapper-51">
+                <div class="div-14"><div class="text-wrapper-41" style="letter-spacing: -0.5px;">100%</div></div>
+              </div>
+              <div class="background-5"></div>
+              <div class="heading-wrapper-52">
+                <div class="heading-10"><div class="text-wrapper-42" style="letter-spacing: -0.5px;">Cao</div></div>
+              </div>
+              <div class="heading-wrapper-53">
+                <div class="heading-6"><p class="text-wrapper-43" style="letter-spacing: -0.5px;">Tỷ lệ trả lời 24 giờ</p></div>
+              </div>
+              <div class="vertical-divider-wrapper-2"><div class="vertical-divider-2"></div></div>
+              <div class="vertical-divider-wrapper-3"><div class="vertical-divider-2"></div></div>
+              <div class="vertical-divider-wrapper-4"><div class="vertical-divider-2"></div></div>
+            </div>
+            <div class="heading-wrapper-54">
+              <div class="div-14"><div class="text-wrapper-44" style="letter-spacing: -0.5px;">184</div></div>
+            </div>
+            <div class="heading-wrapper-55">
+              <div class="div-14"><div class="text-wrapper-45" style="letter-spacing: -0.5px;">24583</div></div>
+            </div>
+          </div>
+          <div class="heading-wrapper-56">
+            <div class="div-14"><div class="text-wrapper-46" style="letter-spacing: -0.5px;">80%</div></div>
+          </div>
+          <div class="heading-wrapper-57">
+            <div class="heading-3">
+              <div class="xu-t-kho-trong-gi" style="letter-spacing: -0.5px;">Xuất kho trong<br />48 giờ</div>
+            </div>
+          </div>
+          <div class="heading-wrapper-58">
+            <div class="heading-11"><p class="gi-i-thi-u-v-s-n-ph">Giới thiệu về sản phẩm này</p></div><br />
+          </div>
+          <div class="heading-wrapper-59">
+            <div class="div-12"><div class="chi-ti-t">Chi tiết</div></div>
+          </div>
+          <div class="list-item-wrapper">
+            <div class="div-12"><p class="th-ng-hi-u-rosie-le">Thương hiệu: Rosie Le Lunal</p></div>
+          </div>
+          <div class="background-6"></div>
+          <div class="border">
+            <div class="container-wrapper-17">
+              <div class="div-wrapper-3"><div class="text-wrapper-47">Truy cập</div></div>
+            </div>
+          </div>
+          <div class="background-7"></div>
+          <div class="heading-wrapper-60">
+            <div class="div-12"><div class="text-wrapper-48">Mô tả sản phẩm</div></div>
+          </div>
+          <div class="div-21"></div>
+          <div class="div-22"></div>
+          <div class="div-23"></div>
+          <div class="background-8"></div>
+        </div>
+      </div>
+      <div class="container-wrapper-18">
+        <div class="div-24">
+          <div class="container-wrapper-19">
+            <div class="div-wrapper-4">
+              <p class="b-c-l-y-s-n-ph-m-v">
+                Bước 1: Lấy sản phẩm vào lòng bàn tay hoặc miếng bọt biển.<br />Bước 2: Massage nhẹ nhàng trên dưới
+                da để tạo bọt<br />Bước 3: Tắm lại với nước sạch
+              </p>
+            </div>
+          </div>
+          <div class="heading-wrapper-61">
+            <div class="div-12"><p class="element-h-ng-d-n-s-d-ng">5. Hướng dẫn sử dụng</p></div>
+          </div>
+          <div class="container-wrapper-20">
+            <div class="xu-t-x-vi-t-nam-h-n-wrapper">
+              <p class="xu-t-x-vi-t-nam-h-n">
+                Xuất xứ: Việt Nam<br />Hạn sử dụng: 3 năm kể từ ngày sản xuất<br />Trọng lượng: 100ml - 500ml
+              </p>
+            </div>
+          </div>
+          <div class="list-wrapper">
+            <div class="div-3">
+              <div class="item"><div class="text-wrapper-49">Không Triclosan</div></div>
+              <div class="item-2"><div class="text-wrapper-50">Không Paraben (Paraben Free)</div></div>
+            </div>
+          </div>
+          <div class="heading-wrapper-62">
+            <div class="div-12"><div class="element-cam-k-t">4. Cam kết</div></div>
+          </div>
+          <div class="container-wrapper-21">
+            <div class="div-wrapper-4">
+              <p class="aqua-water">
+                Aqua/Water, Cocamidopropyl Betaine, Sodium Laureth Sulfate, Lauric Acid, Glycerin, Myristic Acid,
+                PEG-7 Glyceryl Cocoate, Flower Oil, Parfum, Ethylhexylglycerin, Phenoxyethanol.
+              </p>
+            </div>
+          </div>
+          <div class="heading-wrapper-63">
+            <div class="div-12"><p class="text-wrapper-51">3. Thành phần đầy đủ</p></div>
+          </div>
+          <div class="list-wrapper-2">
+            <div class="list">
+              <div class="item"><div class="text-wrapper-52">Tinh dầu khuynh diệp</div></div>
+              <div class="item-3"><div class="text-wrapper-53">Tinh dầu hoa hồng</div></div>
+              <div class="item-4"><div class="text-wrapper-54">Vitamin B5 (panthenol)</div></div>
+              <div class="item-5"><div class="text-wrapper-55">Betaine</div></div>
+            </div>
+          </div>
+          <div class="heading-wrapper-64">
+            <div class="div-12"><div class="element-th-nh-ph-n-ch-nh">2. Thành phần chính</div></div>
+          </div>
+          <div class="list-wrapper-3">
+            <div class="list-2">
+              <div class="item">
+                <p class="text-wrapper-56">Loại bỏ bụi bẩn trên làn da, làm sạch cho da toàn thân</p>
+              </div>
+              <div class="item-3"><p class="text-wrapper-57">Cấp ẩm cho da giúp tăng mềm mịn, tươi mới cho da</p></div>
+              <div class="t-ng-c-ng-kh-n-ng-t-wrapper">
+                <p class="t-ng-c-ng-kh-n-ng-t">
+                  Tăng cường khả năng tái tạo của da, dưỡng một làn da khỏe mạnh, trắng hồng
+                </p>
+              </div>
+              <div class="l-u-gi-h-ng-th-m-c-a-wrapper">
+                <p class="l-u-gi-h-ng-th-m-c-a">Lưu giữ hương thơm của tinh chất hoa hồng thoải mái, quyến rũ</p>
+              </div>
+            </div>
+          </div>
+          <div class="heading-wrapper-65">
+            <div class="div-12"><div class="text-wrapper-58">1. Công dụng</div></div>
+          </div>
+          <div class="heading-wrapper-66">
+            <div class="heading-11"><div class="m-t">Mô tả</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-wrapper-22">
+        <div class="div-6">
+          <div class="form-wrapper">
+            <div class="form">
+              <div class="container-wrapper-23">
+                <div class="container-wrapper-24">
+                  <div class="div-wrapper-5"><div class="text-wrapper-59" style="letter-spacing: -0.5px;">Mua Ngay</div></div>
+                </div>
+              </div>
+              <div class="border-2">
+                <div class="overlap-group-3">
+                  <div class="input-wrapper">
+                    <div class="input">
+                      <div class="div-25"><div class="text-wrapper-60">Họ và Tên</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-3">
+                <div class="overlap-16">
+                  <div class="input-wrapper-2">
+                    <div class="input-2">
+                      <div class="div-25"><div class="text-wrapper-61">Số điện thoại</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-4">
+                <div class="overlap-16">
+                  <div class="input-wrapper-2">
+                    <div class="input-2">
+                      <div class="div-25">
+                        <div class="div-wrapper-6"><div class="text-wrapper-62">Số lượng</div></div>
+                        <div class="div-26"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="border-5">
+                <div class="overlap-16">
+                  <div class="input-wrapper-2">
+                    <div class="input-2">
+                      <div class="div-25"><div class="text-wrapper-63">Địa chỉ</div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-27">
+            <div class="heading-wrapper-67">
+              <div class="heading-4"><div class="text-wrapper-64">Giây</div></div>
+            </div>
+            <div class="heading-wrapper-68">
+              <div class="heading-4"><div class="text-wrapper-65">Phút</div></div>
+            </div>
+            <div class="heading-wrapper-69">
+              <div class="heading-4"><div class="text-wrapper-66">Giờ</div></div>
+            </div>
+            <div class="heading-wrapper-70">
+              <div class="heading-4"><div class="text-wrapper-67">Ngày</div></div>
+            </div>
+            <div class="heading-wrapper-71">
+              <div class="div-4"><p class="si-u-sale-ch-di-n-ra" style="letter-spacing: -0.5px;">Siêu sale chỉ diễn ra trong:</p></div>
+            </div>
+            <div class="div-28">
+              <div class="container-wrapper-25">
+                <div class="div-wrapper-7"><div class="text-wrapper-68">00</div></div>
+              </div>
+              <div class="container-wrapper-26">
+                <div class="div-wrapper-7"><div class="text-wrapper-68">11</div></div>
+              </div>
+              <div class="container-wrapper-27">
+                <div class="div-wrapper-7"><div class="text-wrapper-68">59</div></div>
+              </div>
+              <div class="container-wrapper-28">
+                <div class="div-wrapper-7"><div class="text-wrapper-68">53</div></div>
+              </div>
+            </div>
+          </div>
+          <div class="div-29">
+            <div class="heading-wrapper-72">
+              <div class="heading-12"><div class="text-wrapper-69">420.000đ</div></div>
+            </div>
+            <div class="heading-wrapper-73">
+              <div class="div-4"><div class="text-wrapper-70" style="letter-spacing: -0.5px;">Giá gốc:</div></div>
+            </div>
+          </div>
+          <div class="div-30">
+            <div class="heading-wrapper-74">
+              <div class="heading-12"><p class="deal-h-i-mua-ngay" style="letter-spacing: -0.5px;">Deal hời - Mua ngay!</p></div>
+            </div>
+            <img class="img-21" src="img/container-23.svg" />
+          </div>
+          <div class="heading-wrapper-75">
+            <div class="heading-3"><p class="s-a-t-m-tinh-ch-t" style="letter-spacing: -0.5px;">Sữa tắm tinh chất khuynh diệp hoa hồng Rosie</p></div>
+          </div>
+          <div class="heading-wrapper-76">
+            <div class="heading-13"><p class="text-wrapper-71" style="letter-spacing: -0.5px;">Tươi tắn làn da - Khỏe đẹp mịn màng</p></div>
+          </div>
+          <div class="overlap-wrapper-3">
+            <div class="div-31">
+              <div class="div-32">
+                <div class="overlap-group-4">
+                  <div class="heading-wrapper-77">
+                    <div class="div-31"><div class="text-wrapper-72">249.000đ</div></div>
+                  </div>
+                  <div class="heading-wrapper-78">
+                    <div class="heading-13"><div class="text-wrapper-73" style="letter-spacing: -0.5px;">Giảm còn:</div></div>
+                  </div>
+                </div>
+                <img class="img-22" src="img/container-11.svg" />
+              </div>
+              <div class="heading-wrapper-79">
+                <div class="background-wrapper">
+                  <div class="background-9"><div class="text-wrapper-74">-60%</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-wrapper-29">
+        <div class="div-33">
+          <div class="heading-wrapper-80">
+            <div class="heading-3"><div class="rosie-le-lunal">Rosie Le Lunal</div></div>
+          </div>
+          <div class="overlap-group-wrapper-4">
+            <div class="div-34">
+              <div class="container-wrapper-30">
+                <div class="div-34">
+                  <p class="a-ch-lorem-ipsum">
+                    <span class="span">Địa chỉ: </span>
+                    <span class="text-wrapper-33"
+                      >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </span
+                    >
+                  </p>
+                </div>
+              </div>
+              <img class="img-23" src="img/container-10.svg" />
+            </div>
+          </div>
+          <div class="overlap-wrapper-4">
+            <div class="div-4">
+              <div class="container-wrapper-31">
+                <div class="div-12">
+                  <p class="hotline-xxxx">
+                    <span class="span">Hotline: </span> <span class="hotline-33">098xxx xxxx</span>
+                  </p>
+                </div>
+              </div>
+              <img class="img-24" src="img/container-12.svg" />
+            </div>
+          </div>
+          <div class="overlap-wrapper-5">
+            <div class="div-12">
+              <div class="container-wrapper-32">
+                <div class="div-12">
+                  <p class="email-rosielelunal">
+                    <span class="span">Email: </span> <span class="mail-33"> rosielelunal@gmail.com</span>
+                  </p>
+                </div>
+              </div>
+              <img class="img-25" src="img/container-17.svg" />
+            </div>
+          </div>
+          <div class="overlap-wrapper-6">
+            <div class="div-12">
+              <div class="container-wrapper-32">
+                <div class="div-12">
+                  <p class="website-rosielunal">
+                    <span class="span">Website: </span> <span class="website-33"> Rosielunal.com</span>
+                  </p>
+                </div>
+              </div>
+              <img class="img-26" src="img/container-19.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<main>
+  </body>
+</html>
